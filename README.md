@@ -2,6 +2,16 @@
 
 Almacenamiento estandarizado de las bases de microdatos de las Encuesta Permanante de Hogares publicadas por INDEC y el resto de las bases de datos necesarias para el tratamiento de las EPH. 
 
+## Obtener nuevos microdatos
+
+Para obtener nuevos periodos publicados hay que ejecutar el archivo `getter.py` y pasarle como argumento la dirección del archivo `txt` que provee indec. 
+
+```bash
+python getter.py <URI_TXT>
+```
+
+Esto ejecuta todo el procesamiento hasta dejar listas las bases en sus carpetas pertinentes (individual y hogar). Luego hay que hacer un commit y enviar. Y Listo!
+
 ## Breve descripción
 
 En este repositorio se albergan:
