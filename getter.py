@@ -61,6 +61,9 @@ def descargar_y_procesar(url):
             zip_output = csv_output.replace(".csv", ".zip")
 
             # Guardar CSV
+            # Forzar columna ITF a que sea int
+            if 'ITF' in df.columns:
+                df['ITF'] = pd.to_numeric(df['ITF'], errors='coerce').fillna(0).astype(int)
             df.to_csv(f'./tmp/{csv_output}', index=False)
             print(f"Archivo CSV generado: {csv_output}")
 
