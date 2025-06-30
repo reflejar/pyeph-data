@@ -42,7 +42,12 @@ def descargar_y_procesar(url):
 
     # Selecciona la primera carpeta 
     folders = [folder for folder in os.listdir("tmp") if os.path.isdir(os.path.join('tmp', folder))]
+    
+    # Si hay más de una carpeta, se toma la primera. Si no hay carpetas, se toma la carpeta tmp directamente.
+    if not folders:
+        folders = ['.']    
     folder = os.path.join('tmp', folders[0])
+
     archivos_txt = [file for file in os.listdir(folder) if file.endswith(".txt")]
     for txt_file in archivos_txt:
         txt_path = os.path.join(folder, txt_file)
