@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyEPH Data - Bases de Datos EPH</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+            <h1 class="text-3xl font-bold text-gray-800 mb-2">PyEPH Data Repository</h1>
+            <p class="text-gray-600">
+                Bases de microdatos de la Encuesta Permanente de Hogares (EPH) del INDEC <br />
+                <small class="text-gray-500">(DDBB no oficiales)</small>
+
+            </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Carpeta Individual -->
+            <div class="bg-white rounded-lg shadow-sm p-6">
+                <div class="flex items-center mb-4">
+                    <svg class="w-8 h-8 text-blue-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"></path>
+                    </svg>
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-800">individual/</h2>
+                        <p class="text-sm text-gray-500">97 archivos</p>
+                    </div>
+                </div>
+                <div class="space-y-1 max-h-96 overflow-y-auto">
+                    <a href="individual/base_individual_2024T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2024T4.zip</a>
+                    <a href="individual/base_individual_2024T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2024T3.zip</a>
+                    <a href="individual/base_individual_2024T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2024T2.zip</a>
+                    <a href="individual/base_individual_2024T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2024T1.zip</a>
+                    <a href="individual/base_individual_2023T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2023T4.zip</a>
+                    <a href="individual/base_individual_2023T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2023T3.zip</a>
+                    <a href="individual/base_individual_2023T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2023T2.zip</a>
+                    <a href="individual/base_individual_2023T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2023T1.zip</a>
+                    <a href="individual/base_individual_2022T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2022T4.zip</a>
+                    <a href="individual/base_individual_2022T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2022T3.zip</a>
+                    <a href="individual/base_individual_2022T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2022T2.zip</a>
+                    <a href="individual/base_individual_2022T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2022T1.zip</a>
+                    <a href="individual/base_individual_2021T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2021T4.zip</a>
+                    <a href="individual/base_individual_2021T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2021T3.zip</a>
+                    <a href="individual/base_individual_2021T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2021T2.zip</a>
+                    <a href="individual/base_individual_2021T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2021T1.zip</a>
+                    <a href="individual/base_individual_2020T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2020T4.zip</a>
+                    <a href="individual/base_individual_2020T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2020T3.zip</a>
+                    <a href="individual/base_individual_2020T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2020T2.zip</a>
+                    <a href="individual/base_individual_2020T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2020T1.zip</a>
+                    <a href="individual/base_individual_2019T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2019T4.zip</a>
+                    <a href="individual/base_individual_2019T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2019T3.zip</a>
+                    <a href="individual/base_individual_2019T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2019T2.zip</a>
+                    <a href="individual/base_individual_2019T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2019T1.zip</a>
+                    <a href="individual/base_individual_2018T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2018T4.zip</a>
+                    <a href="individual/base_individual_2018T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2018T3.zip</a>
+                    <a href="individual/base_individual_2018T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2018T2.zip</a>
+                    <a href="individual/base_individual_2018T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2018T1.zip</a>
+                    <a href="individual/base_individual_2017T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2017T4.zip</a>
+                    <a href="individual/base_individual_2017T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2017T3.zip</a>
+                    <a href="individual/base_individual_2017T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2017T2.zip</a>
+                    <a href="individual/base_individual_2017T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2017T1.zip</a>
+                    <a href="individual/base_individual_2016T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2016T4.zip</a>
+                    <a href="individual/base_individual_2016T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2016T3.zip</a>
+                    <a href="individual/base_individual_2016T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2016T2.zip</a>
+                    <a href="individual/base_individual_2015T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2015T2.zip</a>
+                    <a href="individual/base_individual_2015T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2015T1.zip</a>
+                    <a href="individual/base_individual_2014T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2014T4.zip</a>
+                    <a href="individual/base_individual_2014T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2014T3.zip</a>
+                    <a href="individual/base_individual_2014T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2014T2.zip</a>
+                    <a href="individual/base_individual_2014T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2014T1.zip</a>
+                    <a href="individual/base_individual_2013T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2013T4.zip</a>
+                    <a href="individual/base_individual_2013T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2013T3.zip</a>
+                    <a href="individual/base_individual_2013T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2013T2.zip</a>
+                    <a href="individual/base_individual_2013T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2013T1.zip</a>
+                    <a href="individual/base_individual_2012T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2012T4.zip</a>
+                    <a href="individual/base_individual_2012T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2012T3.zip</a>
+                    <a href="individual/base_individual_2012T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2012T2.zip</a>
+                    <a href="individual/base_individual_2012T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2012T1.zip</a>
+                    <a href="individual/base_individual_2011T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2011T4.zip</a>
+                    <a href="individual/base_individual_2011T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2011T3.zip</a>
+                    <a href="individual/base_individual_2011T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2011T2.zip</a>
+                    <a href="individual/base_individual_2011T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2011T1.zip</a>
+                    <a href="individual/base_individual_2010T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2010T4.zip</a>
+                    <a href="individual/base_individual_2010T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2010T3.zip</a>
+                    <a href="individual/base_individual_2010T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2010T2.zip</a>
+                    <a href="individual/base_individual_2010T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2010T1.zip</a>
+                    <a href="individual/base_individual_2009T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2009T4.zip</a>
+                    <a href="individual/base_individual_2009T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2009T3.zip</a>
+                    <a href="individual/base_individual_2009T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2009T2.zip</a>
+                    <a href="individual/base_individual_2009T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2009T1.zip</a>
+                    <a href="individual/base_individual_2008T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2008T4.zip</a>
+                    <a href="individual/base_individual_2008T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2008T3.zip</a>
+                    <a href="individual/base_individual_2008T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2008T2.zip</a>
+                    <a href="individual/base_individual_2008T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2008T1.zip</a>
+                    <a href="individual/base_individual_2007T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2007T4.zip</a>
+                    <a href="individual/base_individual_2007T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2007T2.zip</a>
+                    <a href="individual/base_individual_2007T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2007T1.zip</a>
+                    <a href="individual/base_individual_2006T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2006T4.zip</a>
+                    <a href="individual/base_individual_2006T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2006T3.zip</a>
+                    <a href="individual/base_individual_2006T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2006T2.zip</a>
+                    <a href="individual/base_individual_2006T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2006T1.zip</a>
+                    <a href="individual/base_individual_2005T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2005T4.zip</a>
+                    <a href="individual/base_individual_2005T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2005T3.zip</a>
+                    <a href="individual/base_individual_2005T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2005T2.zip</a>
+                    <a href="individual/base_individual_2005T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2005T1.zip</a>
+                    <a href="individual/base_individual_2004T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2004T4.zip</a>
+                    <a href="individual/base_individual_2004T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2004T3.zip</a>
+                    <a href="individual/base_individual_2004T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2004T2.zip</a>
+                    <a href="individual/base_individual_2004T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2004T1.zip</a>
+                    <a href="individual/base_individual_2003T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2003T4.zip</a>
+                    <a href="individual/base_individual_2003T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2003T3.zip</a>
+                    <a href="individual/base_individual_2003O1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2003O1.zip</a>
+                    <a href="individual/base_individual_2002O2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2002O2.zip</a>
+                    <a href="individual/base_individual_2002O1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2002O1.zip</a>
+                    <a href="individual/base_individual_2001O2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2001O2.zip</a>
+                    <a href="individual/base_individual_2001O1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2001O1.zip</a>
+                    <a href="individual/base_individual_2000O2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2000O2.zip</a>
+                    <a href="individual/base_individual_2000O1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_2000O1.zip</a>
+                    <a href="individual/base_individual_1999O2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_1999O2.zip</a>
+                    <a href="individual/base_individual_1999O1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_1999O1.zip</a>
+                    <a href="individual/base_individual_1998O2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_1998O2.zip</a>
+                    <a href="individual/base_individual_1998O1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_1998O1.zip</a>
+                    <a href="individual/base_individual_1997O2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_1997O2.zip</a>
+                    <a href="individual/base_individual_1997O1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_1997O1.zip</a>
+                    <a href="individual/base_individual_1996O2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_1996O2.zip</a>
+                    <a href="individual/base_individual_1996O1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">📄 base_individual_1996O1.zip</a>
+                </div>
+            </div>
+            
+            <!-- Carpeta Hogar -->
+            <div class="bg-white rounded-lg shadow-sm p-6">
+                <div class="flex items-center mb-4">
+                    <svg class="w-8 h-8 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"></path>
+                    </svg>
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-800">hogar/</h2>
+                        <p class="text-sm text-gray-500">97 archivos</p>
+                    </div>
+                </div>
+                <div class="space-y-1 max-h-96 overflow-y-auto">
+                    <a href="hogar/base_hogar_2024T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2024T4.zip</a>
+                    <a href="hogar/base_hogar_2024T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2024T3.zip</a>
+                    <a href="hogar/base_hogar_2024T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2024T2.zip</a>
+                    <a href="hogar/base_hogar_2024T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2024T1.zip</a>
+                    <a href="hogar/base_hogar_2023T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2023T4.zip</a>
+                    <a href="hogar/base_hogar_2023T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2023T3.zip</a>
+                    <a href="hogar/base_hogar_2023T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2023T2.zip</a>
+                    <a href="hogar/base_hogar_2023T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2023T1.zip</a>
+                    <a href="hogar/base_hogar_2022T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2022T4.zip</a>
+                    <a href="hogar/base_hogar_2022T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2022T3.zip</a>
+                    <a href="hogar/base_hogar_2022T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2022T2.zip</a>
+                    <a href="hogar/base_hogar_2022T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2022T1.zip</a>
+                    <a href="hogar/base_hogar_2021T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2021T4.zip</a>
+                    <a href="hogar/base_hogar_2021T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2021T3.zip</a>
+                    <a href="hogar/base_hogar_2021T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2021T2.zip</a>
+                    <a href="hogar/base_hogar_2021T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2021T1.zip</a>
+                    <a href="hogar/base_hogar_2020T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2020T4.zip</a>
+                    <a href="hogar/base_hogar_2020T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2020T3.zip</a>
+                    <a href="hogar/base_hogar_2020T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2020T2.zip</a>
+                    <a href="hogar/base_hogar_2020T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2020T1.zip</a>
+                    <a href="hogar/base_hogar_2019T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2019T4.zip</a>
+                    <a href="hogar/base_hogar_2019T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2019T3.zip</a>
+                    <a href="hogar/base_hogar_2019T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2019T2.zip</a>
+                    <a href="hogar/base_hogar_2019T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2019T1.zip</a>
+                    <a href="hogar/base_hogar_2018T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2018T4.zip</a>
+                    <a href="hogar/base_hogar_2018T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2018T3.zip</a>
+                    <a href="hogar/base_hogar_2018T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2018T2.zip</a>
+                    <a href="hogar/base_hogar_2018T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2018T1.zip</a>
+                    <a href="hogar/base_hogar_2017T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2017T4.zip</a>
+                    <a href="hogar/base_hogar_2017T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2017T3.zip</a>
+                    <a href="hogar/base_hogar_2017T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2017T2.zip</a>
+                    <a href="hogar/base_hogar_2017T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2017T1.zip</a>
+                    <a href="hogar/base_hogar_2016T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2016T4.zip</a>
+                    <a href="hogar/base_hogar_2016T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2016T3.zip</a>
+                    <a href="hogar/base_hogar_2016T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2016T2.zip</a>
+                    <a href="hogar/base_hogar_2015T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2015T2.zip</a>
+                    <a href="hogar/base_hogar_2015T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2015T1.zip</a>
+                    <a href="hogar/base_hogar_2014T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2014T4.zip</a>
+                    <a href="hogar/base_hogar_2014T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2014T3.zip</a>
+                    <a href="hogar/base_hogar_2014T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2014T2.zip</a>
+                    <a href="hogar/base_hogar_2014T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2014T1.zip</a>
+                    <a href="hogar/base_hogar_2013T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2013T4.zip</a>
+                    <a href="hogar/base_hogar_2013T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2013T3.zip</a>
+                    <a href="hogar/base_hogar_2013T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2013T2.zip</a>
+                    <a href="hogar/base_hogar_2013T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2013T1.zip</a>
+                    <a href="hogar/base_hogar_2012T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2012T4.zip</a>
+                    <a href="hogar/base_hogar_2012T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2012T3.zip</a>
+                    <a href="hogar/base_hogar_2012T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2012T2.zip</a>
+                    <a href="hogar/base_hogar_2012T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2012T1.zip</a>
+                    <a href="hogar/base_hogar_2011T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2011T4.zip</a>
+                    <a href="hogar/base_hogar_2011T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2011T3.zip</a>
+                    <a href="hogar/base_hogar_2011T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2011T2.zip</a>
+                    <a href="hogar/base_hogar_2011T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2011T1.zip</a>
+                    <a href="hogar/base_hogar_2010T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2010T4.zip</a>
+                    <a href="hogar/base_hogar_2010T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2010T3.zip</a>
+                    <a href="hogar/base_hogar_2010T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2010T2.zip</a>
+                    <a href="hogar/base_hogar_2010T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2010T1.zip</a>
+                    <a href="hogar/base_hogar_2009T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2009T4.zip</a>
+                    <a href="hogar/base_hogar_2009T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2009T3.zip</a>
+                    <a href="hogar/base_hogar_2009T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2009T2.zip</a>
+                    <a href="hogar/base_hogar_2009T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2009T1.zip</a>
+                    <a href="hogar/base_hogar_2008T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2008T4.zip</a>
+                    <a href="hogar/base_hogar_2008T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2008T3.zip</a>
+                    <a href="hogar/base_hogar_2008T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2008T2.zip</a>
+                    <a href="hogar/base_hogar_2008T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2008T1.zip</a>
+                    <a href="hogar/base_hogar_2007T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2007T4.zip</a>
+                    <a href="hogar/base_hogar_2007T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2007T2.zip</a>
+                    <a href="hogar/base_hogar_2007T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2007T1.zip</a>
+                    <a href="hogar/base_hogar_2006T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2006T4.zip</a>
+                    <a href="hogar/base_hogar_2006T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2006T3.zip</a>
+                    <a href="hogar/base_hogar_2006T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2006T2.zip</a>
+                    <a href="hogar/base_hogar_2006T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2006T1.zip</a>
+                    <a href="hogar/base_hogar_2005T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2005T4.zip</a>
+                    <a href="hogar/base_hogar_2005T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2005T3.zip</a>
+                    <a href="hogar/base_hogar_2005T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2005T2.zip</a>
+                    <a href="hogar/base_hogar_2005T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2005T1.zip</a>
+                    <a href="hogar/base_hogar_2004T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2004T4.zip</a>
+                    <a href="hogar/base_hogar_2004T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2004T3.zip</a>
+                    <a href="hogar/base_hogar_2004T2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2004T2.zip</a>
+                    <a href="hogar/base_hogar_2004T1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2004T1.zip</a>
+                    <a href="hogar/base_hogar_2003T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2003T4.zip</a>
+                    <a href="hogar/base_hogar_2003T3.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2003T3.zip</a>
+                    <a href="hogar/base_hogar_2003O1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2003O1.zip</a>
+                    <a href="hogar/base_hogar_2002O2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2002O2.zip</a>
+                    <a href="hogar/base_hogar_2002O1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2002O1.zip</a>
+                    <a href="hogar/base_hogar_2001O2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2001O2.zip</a>
+                    <a href="hogar/base_hogar_2001O1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2001O1.zip</a>
+                    <a href="hogar/base_hogar_2000O2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2000O2.zip</a>
+                    <a href="hogar/base_hogar_2000O1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_2000O1.zip</a>
+                    <a href="hogar/base_hogar_1999O2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_1999O2.zip</a>
+                    <a href="hogar/base_hogar_1999O1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_1999O1.zip</a>
+                    <a href="hogar/base_hogar_1998O2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_1998O2.zip</a>
+                    <a href="hogar/base_hogar_1998O1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_1998O1.zip</a>
+                    <a href="hogar/base_hogar_1997O2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_1997O2.zip</a>
+                    <a href="hogar/base_hogar_1997O1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_1997O1.zip</a>
+                    <a href="hogar/base_hogar_1996O2.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_1996O2.zip</a>
+                    <a href="hogar/base_hogar_1996O1.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 rounded transition-colors">📄 base_hogar_1996O1.zip</a>
+                </div>
+            </div>
+            
+            <!-- Carpeta Canastas -->
+            <div class="bg-white rounded-lg shadow-sm p-6">
+                <div class="flex items-center mb-4">
+                    <svg class="w-8 h-8 text-yellow-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"></path>
+                    </svg>
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-800">canastas/</h2>
+                        <p class="text-sm text-gray-500">10 archivos</p>
+                    </div>
+                </div>
+                <div class="space-y-1 max-h-96 overflow-y-auto">
+                    <a href="canastas/cbt_2024-12.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 rounded transition-colors">📄 cbt_2024-12.zip</a>
+                    <a href="canastas/cbt_2024-06.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 rounded transition-colors">📄 cbt_2024-06.zip</a>
+                    <a href="canastas/cbt_2022-12.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 rounded transition-colors">📄 cbt_2022-12.zip</a>
+                    <a href="canastas/cbt_2021-12.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 rounded transition-colors">📄 cbt_2021-12.zip</a>
+                    <a href="canastas/cbt_2021-06.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 rounded transition-colors">📄 cbt_2021-06.zip</a>
+                    <a href="canastas/cba_2024-12.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 rounded transition-colors">📄 cba_2024-12.zip</a>
+                    <a href="canastas/cba_2024-06.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 rounded transition-colors">📄 cba_2024-06.zip</a>
+                    <a href="canastas/cba_2022-12.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 rounded transition-colors">📄 cba_2022-12.zip</a>
+                    <a href="canastas/cba_2021-12.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 rounded transition-colors">📄 cba_2021-12.zip</a>
+                    <a href="canastas/cba_2021-06.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-yellow-50 hover:text-yellow-600 rounded transition-colors">📄 cba_2021-06.zip</a>
+                </div>
+            </div>
+            
+            <!-- Carpeta Adulto Equivalente -->
+            <div class="bg-white rounded-lg shadow-sm p-6">
+                <div class="flex items-center mb-4">
+                    <svg class="w-8 h-8 text-purple-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"></path>
+                    </svg>
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-800">adulto_equivalente/</h2>
+                        <p class="text-sm text-gray-500">1 archivos</p>
+                    </div>
+                </div>
+                <div class="space-y-1 max-h-96 overflow-y-auto">
+                    <a href="adulto_equivalente/adulto_equivalente.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-purple-600 rounded transition-colors">📄 adulto_equivalente.zip</a>
+                </div>
+            </div>
+            
+            <!-- Carpeta Mautic Hogar -->
+            <div class="bg-white rounded-lg shadow-sm p-6">
+                <div class="flex items-center mb-4">
+                    <svg class="w-8 h-8 text-red-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"></path>
+                    </svg>
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-800">mautic_hogar/</h2>
+                        <p class="text-sm text-gray-500">5 archivos</p>
+                    </div>
+                </div>
+                <div class="space-y-1 max-h-96 overflow-y-auto">
+                    <a href="mautic_hogar/mautic_hogar_2020T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 rounded transition-colors">📄 mautic_hogar_2020T4.zip</a>
+                    <a href="mautic_hogar/mautic_hogar_2019T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 rounded transition-colors">📄 mautic_hogar_2019T4.zip</a>
+                    <a href="mautic_hogar/mautic_hogar_2018T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 rounded transition-colors">📄 mautic_hogar_2018T4.zip</a>
+                    <a href="mautic_hogar/mautic_hogar_2017T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 rounded transition-colors">📄 mautic_hogar_2017T4.zip</a>
+                    <a href="mautic_hogar/mautic_hogar_2016T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 rounded transition-colors">📄 mautic_hogar_2016T4.zip</a>
+                </div>
+            </div>
+            
+            <!-- Carpeta Mautic Individual -->
+            <div class="bg-white rounded-lg shadow-sm p-6">
+                <div class="flex items-center mb-4">
+                    <svg class="w-8 h-8 text-indigo-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"></path>
+                    </svg>
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-800">mautic_individual/</h2>
+                        <p class="text-sm text-gray-500">5 archivos</p>
+                    </div>
+                </div>
+                <div class="space-y-1 max-h-96 overflow-y-auto">
+                    <a href="mautic_individual/mautic_individual_2020T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded transition-colors">📄 mautic_individual_2020T4.zip</a>
+                    <a href="mautic_individual/mautic_individual_2019T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded transition-colors">📄 mautic_individual_2019T4.zip</a>
+                    <a href="mautic_individual/mautic_individual_2018T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded transition-colors">📄 mautic_individual_2018T4.zip</a>
+                    <a href="mautic_individual/mautic_individual_2017T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded transition-colors">📄 mautic_individual_2017T4.zip</a>
+                    <a href="mautic_individual/mautic_individual_2016T4.zip" class="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded transition-colors">📄 mautic_individual_2016T4.zip</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-6 text-center text-gray-600 text-sm">
+            <p>
+                Datos originales publicados por <strong>INDEC</strong> bajo licencia de datos abiertos.<br>
+                Este repositorio es parte del proyecto <a href="https://github.com/reflejar/pyeph" class="text-blue-500 hover:underline" target="_blank">PyEPH</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

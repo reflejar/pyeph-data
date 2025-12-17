@@ -87,6 +87,13 @@ if len(sys.argv) > 1:
     if URL_REGEX.match(URI):
         descargar_y_procesar(URI)
         print("Procesado con éxito")
+        
+        # Regenerar index.html
+        try:
+            import generate_index
+            generate_index.generate_index()
+        except Exception as e:
+            print(f"Advertencia: No se pudo actualizar index.html: {e}")
     else:
         print(f"La URI proporcionada no es válida: {URI}")
 else:
