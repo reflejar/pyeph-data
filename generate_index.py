@@ -2,7 +2,6 @@ import os
 from pathlib import Path
 
 def generate_index():
-    """Genera un index.html con todas las bases de datos disponibles."""
     
     # Obtener archivos de cada carpeta
     individual_files = []
@@ -48,7 +47,6 @@ def generate_index():
             reverse=True
         )
     
-    # Generar HTML
     html = """<!DOCTYPE html>
 <html lang="es">
 <head>
@@ -195,7 +193,7 @@ def generate_index():
         <div class="mt-6 text-center text-gray-600 text-sm">
             <p>
                 Datos originales publicados por <strong>INDEC</strong> bajo licencia de datos abiertos.<br>
-                Este repositorio es parte del proyecto <a href="https://github.com/reflejar/pyeph" class="text-blue-500 hover:underline" target="_blank">PyEPH</a>
+                Este repositorio es parte del proyecto <a href="https://github.com/institutohumai/pyeph" class="text-blue-500 hover:underline" target="_blank">PyEPH</a>
             </p>
         </div>
     </div>
