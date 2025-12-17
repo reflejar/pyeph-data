@@ -6,6 +6,10 @@ import zipfile
 import shutil
 import pandas as pd
 
+# TODO: Falta agregar la descarga automatica de las canastas
+# https://datos.gob.ar/fi/dataset/sspm-canasta-basica-alimentaria-regiones-pais
+# https://datos.gob.ar/vi/dataset/sspm-canasta-basica-total-regiones-pais
+
 # Expresión regular para validar una URL
 URL_REGEX = re.compile(
     r'^(https?://)'                 # http:// o https:// (obligatorio)
