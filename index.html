@@ -13,9 +13,32 @@
             <p class="text-gray-600">
                 Bases de microdatos de la Encuesta Permanente de Hogares (EPH) del INDEC <br />
                 <small class="text-gray-500">(DDBB no oficiales)</small>
-
             </p>
         </div>
+        
+        <!-- Cartel de nuevas bases (visible por 15 días) -->
+        <div id="nuevo-cartel" class="bg-green-50 border-l-4 border-green-500 p-4 mb-6 rounded-lg shadow-sm" style="display: none;">
+            <div class="flex items-center">
+                <svg class="w-6 h-6 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <div>
+                    <p class="text-green-800 font-semibold">🎉 ¡Nuevas bases publicadas!</p>
+                    <p class="text-green-700 text-sm">Se han actualizado las bases de datos. Última actualización: 17/12/2025</p>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            // Mostrar cartel solo si está dentro de los 15 días
+            const fechaGeneracion = new Date('2025-12-17T14:20:29.303903');
+            const fechaExpiracion = new Date('2026-01-01T14:20:29.303903');
+            const ahora = new Date();
+            
+            if (ahora >= fechaGeneracion && ahora <= fechaExpiracion) {
+                document.getElementById('nuevo-cartel').style.display = 'block';
+            }
+        </script>
         
         <div class="grid md:grid-cols-2 gap-6">
             <!-- Carpeta Individual -->

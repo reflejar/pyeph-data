@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+from datetime import datetime, timedelta
 
 def generate_index():
     
@@ -46,8 +47,14 @@ def generate_index():
             [f for f in os.listdir('mautic_individual') if f.endswith('.zip')],
             reverse=True
         )
+    # Obtener fecha actual y calcular fecha de expiración (15 días)
+    fecha_generacion = datetime.now()
+    fecha_expiracion = fecha_generacion + timedelta(days=15)
+    fecha_str = fecha_generacion.strftime('%d/%m/%Y')
+    fecha_gen_iso = fecha_generacion.isoformat()
+    fecha_exp_iso = fecha_expiracion.isoformat()
     
-    html = """<!DOCTYPE html>
+    html = f"""<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -62,9 +69,32 @@ def generate_index():
             <p class="text-gray-600">
                 Bases de microdatos de la Encuesta Permanente de Hogares (EPH) del INDEC <br />
                 <small class="text-gray-500">(DDBB no oficiales)</small>
-
             </p>
         </div>
+        
+        <!-- Cartel de nuevas bases (visible por 15 días) -->
+        <div id="nuevo-cartel" class="bg-green-50 border-l-4 border-green-500 p-4 mb-6 rounded-lg shadow-sm" style="display: none;">
+            <div class="flex items-center">
+                <svg class="w-6 h-6 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <div>
+                    <p class="text-green-800 font-semibold">🎉 ¡Nuevas bases publicadas!</p>
+                    <p class="text-green-700 text-sm">Se han actualizado las bases de datos. Última actualización: {fecha_str}</p>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            // Mostrar cartel solo si está dentro de los 15 días
+            const fechaGeneracion = new Date('{fecha_gen_iso}');
+            const fechaExpiracion = new Date('{fecha_exp_iso}');
+            const ahora = new Date();
+            
+            if (ahora >= fechaGeneracion && ahora <= fechaExpiracion) {{
+                document.getElementById('nuevo-cartel').style.display = 'block';
+            }}
+        </script>
         
         <div class="grid md:grid-cols-2 gap-6">
             <!-- Carpeta Individual -->
@@ -75,11 +105,11 @@ def generate_index():
                     </svg>
                     <div>
                         <h2 class="text-xl font-semibold text-gray-800">individual/</h2>
-                        <p class="text-sm text-gray-500">{} archivos</p>
+                        <p class="text-sm text-gray-500">{len(individual_files)} archivos</p>
                     </div>
                 </div>
                 <div class="space-y-1 max-h-96 overflow-y-auto">
-""".format(len(individual_files))
+"""
     
     # Agregar archivos individuales
     for file in individual_files:
