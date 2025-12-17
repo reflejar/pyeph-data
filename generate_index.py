@@ -70,6 +70,10 @@ def generate_index():
                 Bases de microdatos de la Encuesta Permanente de Hogares (EPH) del INDEC <br />
                 <small class="text-gray-500">(DDBB no oficiales)</small>
             </p>
+            <p class="text-sm text-gray-500 mt-3">
+                ¿Encontraste algún problema? Contactá al maintainer: 
+                <a href="mailto:marianovaldez92@protonmail.com" class="text-blue-600 hover:underline">marianovaldez92@protonmail.com</a>
+            </p>
         </div>
         
         <!-- Cartel de nuevas bases (visible por 15 días) -->
